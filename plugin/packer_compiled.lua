@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["black.nvim"] = {
+    loaded = true,
+    path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/black.nvim",
+    url = "https://github.com/alexanderbluhm/black.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -163,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["night-owl.vim"] = {
+    loaded = true,
+    path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/night-owl.vim",
+    url = "https://github.com/haishanh/night-owl.vim"
   },
   ["null-ls.nvim"] = {
     loaded = true,

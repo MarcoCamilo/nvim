@@ -16,6 +16,9 @@ vim.g.mapleader = " "
 --   command_mode = "c",
 
 -- Normal --
+-- Alpha (return to homescreen)
+keymap("n", "<leader>;", ":Alpha<CR>", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
