@@ -94,12 +94,6 @@ _G.packer_plugins = {
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
-  ["ayu-vim"] = {
-    config = { "\27LJ\2\n3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20colorscheme ayu\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/ayu-vim",
-    url = "https://github.com/ayu-theme/ayu-vim"
-  },
   ["black.nvim"] = {
     loaded = true,
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/black.nvim",
@@ -283,6 +277,11 @@ _G.packer_plugins = {
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
   },
+  vimtex = {
+    loaded = true,
+    path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/which-key.nvim",
@@ -295,10 +294,6 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
--- Config for: ayu-vim
-time([[Config for ayu-vim]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\20colorscheme ayu\bcmd\bvim\0", "config", "ayu-vim")
-time([[Config for ayu-vim]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")

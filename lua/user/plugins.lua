@@ -66,10 +66,10 @@ return packer.startup(function(use)
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
   use { "alexanderbluhm/black.nvim" } 
   use { "haishanh/night-owl.vim" }
-  use { "ayu-theme/ayu-vim",
-        config = function ()
-          vim.cmd('colorscheme ayu')
-        end}
+  -- use { "ayu-theme/ayu-vim",
+  --       config = function ()
+  --         vim.cmd('colorscheme ayu')
+  --       end}
   use { "catppuccin/nvim", 
         as = "catppuccin",
         require("catppuccin").setup({
@@ -124,6 +124,9 @@ return packer.startup(function(use)
     end, 
     ft = { "markdown" }, 
   })
+
+  -- VimTeX
+  use { "lervag/vimtex" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
