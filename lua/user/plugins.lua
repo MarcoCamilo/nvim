@@ -66,6 +66,18 @@ return packer.startup(function(use)
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
   use { "alexanderbluhm/black.nvim" } 
   use { "haishanh/night-owl.vim" }
+  use { "ayu-theme/ayu-vim",
+        config = function ()
+          vim.cmd('colorscheme ayu')
+        end}
+  use { "catppuccin/nvim", 
+        as = "catppuccin",
+        require("catppuccin").setup({
+          flavour = "mocha"}),
+        config = function ()
+          vim.cmd('colorscheme catppuccin')
+        end
+      }
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
