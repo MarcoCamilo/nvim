@@ -14,6 +14,7 @@ vim.opt.laststatus = 3                          -- only the last window will alw
 vim.opt.linebreak = true
 vim.opt.mouse = "a"                             -- allow the mouse to be used in neovim
 vim.opt.number = true                           -- set numbered lines
+vim.opt.relativenumber = true                   -- set relative numbers
 vim.opt.numberwidth = 4                         -- minimal number of columns to use for the line number {default 4}
 vim.opt.pumheight = 10                          -- pop up menu height
 vim.opt.ruler = false                           -- hide the line and column number of the cursor position

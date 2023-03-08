@@ -166,10 +166,8 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["markdown-preview.nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
+    loaded = true,
+    path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
@@ -278,6 +276,7 @@ _G.packer_plugins = {
     url = "https://github.com/RRethy/vim-illuminate"
   },
   vimtex = {
+    config = { "\27LJ\2\n¡\1\0\0\3\0\6\0\a6\0\0\0009\0\1\0005\1\3\0005\2\4\0=\2\5\1=\1\2\0K\0\1\0\foptions\1\5\0\0\r-xelatex\21-file-line-error\15-synctex=1\29-interaction=nonstopmode\1\0\1\15executable\flatexmk\28vimtex_compiler_latexmk\6g\bvim\0" },
     loaded = true,
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
@@ -290,21 +289,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Setup for: markdown-preview.nvim
-time([[Setup for markdown-preview.nvim]], true)
-try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
-time([[Setup for markdown-preview.nvim]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
 time([[Config for catppuccin]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
-vim.cmd("augroup END")
+-- Config for: vimtex
+time([[Config for vimtex]], true)
+try_loadstring("\27LJ\2\n¡\1\0\0\3\0\6\0\a6\0\0\0009\0\1\0005\1\3\0005\2\4\0=\2\5\1=\1\2\0K\0\1\0\foptions\1\5\0\0\r-xelatex\21-file-line-error\15-synctex=1\29-interaction=nonstopmode\1\0\1\15executable\flatexmk\28vimtex_compiler_latexmk\6g\bvim\0", "config", "vimtex")
+time([[Config for vimtex]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

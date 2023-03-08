@@ -92,3 +92,6 @@ keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opt
 
 -- Markdown Preview
 keymap("n", "<leader>mp", ":MarkdownPreviewToggle<CR>")
+
+-- VimTeX
+keymap("n", "<leader>txc", ":VimtexCompile<CR>")

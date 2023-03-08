@@ -124,10 +124,15 @@ return packer.startup(function(use)
     end, 
     ft = { "markdown" }, 
   })
-
+  
   -- VimTeX
-  use { "lervag/vimtex" }
-
+  use {'lervag/vimtex', config = function()
+      vim.g.vimtex_compiler_latexmk = {
+          executable = 'latexmk',
+          options = {'-xelatex', '-file-line-error', '-synctex=1', '-interaction=nonstopmode'},
+      }
+  end}
+ 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
