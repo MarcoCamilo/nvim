@@ -124,6 +124,9 @@ return packer.startup(function(use)
     end, 
     ft = { "markdown" }, 
   })
+
+  -- Markdown Preview (B)
+  -- use { "davidgranstrom/nvim-markdown-preview" }
   
   -- VimTeX
   use {'lervag/vimtex', config = function()
