@@ -37,6 +37,10 @@ local spaces = function()
   return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
 
+local function getWords()
+  return tostring(vim.fn.wordcount().words)
+end
+
 lualine.setup {
   options = {
     globalstatus = true,
@@ -52,7 +56,7 @@ lualine.setup {
     lualine_b = { "branch" },
     lualine_c = { diagnostics },
     lualine_x = { diff, spaces, "encoding", filetype },
-    lualine_y = { location },
+    lualine_y = { getWords, location },
     lualine_z = { "progress" },
   },
 }

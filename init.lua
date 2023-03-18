@@ -4,6 +4,7 @@ require "user.keymaps"
 require "user.plugins"
 require "user.autocommands"
 -- require "user.colorscheme"
+-- require "user.markdown-preview.vim"
 require "user.catppuccin"
 require "user.cmp"
 require "user.telescope"
@@ -23,4 +24,7 @@ require "user.alpha"
 require "user.lsp"
 require "user.dap"
 require "user.vimtex"
+require "user.lf"
 
+vim.g.vimtex_view_method = 'zathura'
+vim.g.vimtex_view_general_viewer = 'okular'

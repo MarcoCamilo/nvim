@@ -58,6 +58,12 @@ keymap("v", "p", '"_dP', opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- Better delete
+keymap("v", "d", '"_d')
+keymap("n", "d", '"_d')
+keymap("v", "dd", '"_dd')
+keymap("n", "dd", '"_dd')
+
 -- Plugins --
 
 -- NvimTree
@@ -95,3 +101,7 @@ keymap("n", "<leader>mp", ":MarkdownPreviewToggle<CR>")
 
 -- VimTeX
 keymap("n", "<leader>txc", ":VimtexCompile<CR>")
+keymap("n", "<leader>txv", ":VimtexView<CR>")
+
+-- LF
+keymap("n", "lf", ":Lf<CR>")
