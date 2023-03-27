@@ -26,5 +26,5 @@ require "user.dap"
 require "user.vimtex"
 require "user.lf"
 
-vim.g.vimtex_view_method = 'zathura'
-vim.g.vimtex_view_general_viewer = 'okular'
+-- vim.g.vimtex_view_method = 'zathura'
+-- vim.g.vimtex_view_general_viewer = 'okular'
