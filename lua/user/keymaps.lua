@@ -97,11 +97,11 @@ keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
 
 -- Markdown Preview
-keymap("n", "<leader>mp", ":MarkdownPreviewToggle<CR>")
+keymap("n", "<leader>mp", ":MarkdownPreviewToggle<CR>", opts)
 
 -- VimTeX
-keymap("n", "<leader>txc", ":VimtexCompile<CR>")
-keymap("n", "<leader>txv", ":VimtexView<CR>")
+keymap("n", "<leader>txc", ":VimtexCompile<CR>", opts)
+keymap("n", "<leader>txv", ":VimtexView<CR>", opts)
 
 -- LF
-keymap("n", "lf", ":Lf<CR>")
+keymap("n", "lf", ":Lf<CR>", opts)

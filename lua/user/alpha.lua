@@ -35,11 +35,11 @@ dashboard.section.buttons.val = {
   dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
-local function footer()
-  return "chrisatmachine.com"
-end
+-- local function footer()
+--   return "Your personal nvim space."
+-- end
 
-dashboard.section.footer.val = footer()
+-- dashboard.section.footer.val = footer()
 
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"
