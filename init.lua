@@ -24,3 +24,9 @@ require "user.lsp"
 require "user.dap"
 require "user.vimtex"
 require "user.lf"
+
+
+vim.g.vimtex_view_method = 'sioyek'
+-- vim.g.vimtex_compile_on_save = 0
+-- vim.g.vimtex_compiler_auto_build = 1
+-- vim.g.vimtex_compiler_auto_build_interval = 5000

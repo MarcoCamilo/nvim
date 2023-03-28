@@ -132,15 +132,23 @@ return packer.startup(function(use)
 	-- use { "davidgranstrom/nvim-markdown-preview" }
 
 	-- VimTeX
-	use({
-		"lervag/vimtex",
-		config = function()
-			vim.g.vimtex_compiler_latexmk = {
-				executable = "latexmk",
-				options = { "-xelatex", "-file-line-error", "-synctex=1", "-interaction=nonstopmode" },
-			}
-		end,
-	})
+  use({
+    'lervag/vimtex',
+    config = function()
+      vim.g.vimtex_compiler_latexmk_engines = {
+        _ = "-xelatex",
+        pdfdvi = "-pdfdvi",
+        pdfps = "-pdfps",
+        pdflatex = "-pdf",
+        luatex = "-lualatex",
+        lualatex = "-lualatex",
+        xelatex = "-xelatex",
+        ["context (pdftex)"] = "-pdf -pdflatex=texexec",
+        ["context (luatex)"] = "-pdf -pdflatex=context",
+        ["context (xetex)"] = "-pdf -pdflatex='texexec --xtx'",
+      }
+    end
+  })
 
 	-- LF
 	use({ "ptzz/lf.vim" })
