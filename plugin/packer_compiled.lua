@@ -293,7 +293,7 @@ _G.packer_plugins = {
     url = "https://github.com/RRethy/vim-illuminate"
   },
   vimtex = {
-    config = { "\27LJ\2\n­\2\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\0\n\20context (xetex)#-pdf -pdflatex='texexec --xtx'\6_\r-xelatex\vpdfdvi\f-pdfdvi\vluatex\14-lualatex\rpdflatex\t-pdf\21context (luatex)\27-pdf -pdflatex=context\rlualatex\14-lualatex\21context (pdftex)\27-pdf -pdflatex=texexec\npdfps\v-pdfps\fxelatex\r-xelatex$vimtex_compiler_latexmk_engines\6g\bvim\0" },
+    config = { "\27LJ\2\nz\0\0\2\0\6\0\t6\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\5\0=\1\4\0K\0\1\0\fzathura\23vimtex_view_method\1\0\1\6_\r-xelatex$vimtex_compiler_latexmk_engines\6g\bvim\0" },
     loaded = true,
     path = "/Users/marco-andres/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
@@ -312,7 +312,7 @@ try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\
 time([[Setup for markdown-preview.nvim]], false)
 -- Config for: vimtex
 time([[Config for vimtex]], true)
-try_loadstring("\27LJ\2\n­\2\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\0\n\20context (xetex)#-pdf -pdflatex='texexec --xtx'\6_\r-xelatex\vpdfdvi\f-pdfdvi\vluatex\14-lualatex\rpdflatex\t-pdf\21context (luatex)\27-pdf -pdflatex=context\rlualatex\14-lualatex\21context (pdftex)\27-pdf -pdflatex=texexec\npdfps\v-pdfps\fxelatex\r-xelatex$vimtex_compiler_latexmk_engines\6g\bvim\0", "config", "vimtex")
+try_loadstring("\27LJ\2\nz\0\0\2\0\6\0\t6\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0'\1\5\0=\1\4\0K\0\1\0\fzathura\23vimtex_view_method\1\0\1\6_\r-xelatex$vimtex_compiler_latexmk_engines\6g\bvim\0", "config", "vimtex")
 time([[Config for vimtex]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)

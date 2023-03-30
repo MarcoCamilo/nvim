@@ -1,0 +1,27 @@
+System info:
+  OS: macOS 13.2 (22D49)
+  Vim version: NVIM v0.8.3
+  Has clientserver: true
+  Servername: /var/folders/vd/1tcnpx3n25j4m4gs2vfxctdm0000gn/T/nvim.marco-andres/McgJOO/nvim.82173.0
+
+VimTeX project: russian
+  base: russian.tex
+  root: /Users/marco-andres/Documents/Coding/Coding Sandbox/latex/russian
+  tex: /Users/marco-andres/Documents/Coding/Coding Sandbox/latex/russian/russian.tex
+  main parser: current file verified
+  document class: beamer
+  packages: amsbsy amsfonts amsgen amsmath amsopn amssymb amstext amsthm atbegshi atbegshi-ltx atveryend atveryend-ltx auxhook beamerbaseauxtemplates beamerbaseboxes beamerbasecolor beamerbasecompatibility beamerbasedecode beamerbasefont beamerbaseframe beamerbaseframecomponents beamerbaseframesize beamerbaselocalstructure beamerbasemisc beamerbasemodes beamerbasenavigation beamerbasenotes beamerbaseoptions beamerbaseoverlay beamerbaserequires beamerbasesection beamerbasetemplates beamerbasethemes beamerbasetheorems beamerbasetitle beamerbasetoc beamerbasetranslator beamerbasetwoscreens beamerbaseverbatim beamercolorthemedefault beamercolorthememyacademic beamercolorthemestructure beamerfontthemedefault beamerinnerthemedefault beamerinnerthememyacademic beamerouterthemedefault beamerouterthememyacademic beamerthemedefault beamerthememyacademic bigintcalc bitset cgloss4e enumerate etexcmds etoolbox expl3 fix-cm fontenc fontsetup fontspec fontspec-xetex fspdefault geometry gettitlestring graphics graphicx hycolor hyperref ifpdf iftex ifthen ifvtex infwarerr intcalc keyval kvdefinekeys kvoptions kvsetkeys l3keys2e letltxmacro linguex ltxcmds nameref pdfescape pdftexcmds pgf pgfcomp-version-0-65 pgfcomp-version-1-18 pgfcore pgffor pgfkeys pgfmath pgfrcs pgfsys refcount rerunfilecheck sansmathaccent scrlfile scrlfile-hook scrlogo stringenc tikz translator trig unicode-math unicode-math-xetex uniquecounter url xcolor xparse xparse-2020-10-01 xspace xxcolor
+  compiler: latexmk
+    engine: -xelatex
+    options:
+      -verbose
+      -file-line-error
+      -synctex=1
+      -interaction=nonstopmode
+    callback: 1
+    continuous: 1
+    executable: latexmk
+  viewer: Zathura
+    xwin id: 0
+    cmd_start: zathura  -x "/usr/local/Cellar/neovim/0.8.3/bin/nvim --headless -c \"VimtexInverseSearch %{line} '%{input}'\"" --synctex-forward 1:3:'/Users/marco-andres/Documents/Coding/Coding Sandbox/latex/russian/russian.tex' 'Coding/Coding Sandbox/latex/russian/russian.pdf'&
+  qf method: LaTeX logfile
